@@ -1,0 +1,13 @@
+name: forge-wd-probe
+on:
+  workflow_dispatch:
+    inputs:
+      marker:
+        description: marker
+        required: false
+        default: none
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo baseline-ok
